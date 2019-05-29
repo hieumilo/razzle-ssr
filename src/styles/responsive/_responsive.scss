@@ -1,0 +1,137 @@
+@media screen and (max-width: 768px) {
+  .container-form {
+    width: auto !important;
+  }
+  .header-top {
+    .list-language {
+      margin-right: 10px !important;
+    }
+  }
+  // res menu
+  .menu-top {
+    padding: 9px 10px;
+    .bg-light {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      padding: 0;
+      z-index: 9;
+      .navbar-nav {
+        width: 100%;
+        background: #2e6a6ded !important;
+        top: 58px;
+        padding: 10px 35px 10px 35px;
+        position: absolute;
+        .nav-item {
+          color: #fff;
+          font-weight: bold;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+        }
+      }
+      .navbar-toggler {
+        position: absolute;
+        right: 35px;
+      }
+    }
+    .btn-toget {
+      display: block !important;
+      i {
+        font-weight: bold;
+        font-size: 30px;
+        color: #000;
+        line-height: 2;
+      }
+    }
+    .login-info {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      margin-top: 5px !important;
+    }
+  }
+  // end res menu
+
+  // res form login
+
+  .form-login {
+    top: -100px;
+    .form {
+      .header-form {
+        padding: 0 35px;
+        position: relative;
+        .bg-light {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 60px;
+          padding: 0;
+          z-index: 9;
+          .navbar-nav {
+            width: 100%;
+            background: #2e6a6ded !important;
+            top: 20px;
+            padding: 10px 35px 10px 35px;
+            .nav-item {
+              color: #fff;
+              font-weight: bold;
+              width: 100%;
+              text-align: center;
+              margin: 0;
+            }
+          }
+          .navbar-toggler {
+            position: absolute;
+            right: 35px;
+            top: -50px;
+          }
+        }
+      }
+      .body-form {
+        padding: 50px 20px;
+        height: auto;
+        .btn-submit {
+          height: 100%;
+          line-height: 100px;
+        }
+      }
+    }
+    .card-content {
+      .card {
+        position: inherit !important;
+      }
+      .text {
+        margin-top: 20px;
+      }
+    }
+  }
+  .footer-container{
+    padding: 60px 20px;
+    .copyright {
+      float:  left !important;
+    }
+  }
+}
+// end res from login
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+  .menu-top .nav-item {
+    margin: 0 20px !important;
+  }
+  .footer-container{
+    padding: 60px 20px;
+  }
+}
+
+// res <768
+
+@media screen and (max-width: 767px) {
+  .form-login .form {
+    .btn-submit {
+      margin-top: 20px;
+    }
+  }
+  
+}

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { withNamespaces, Trans } from 'react-i18next';
 import { Link } from 'react-router-dom'
-import logo from './react.svg';
-import './Home.css';
-import { incrementCount, decrementCount } from './store/actions/count'
+import logo from './../react.svg';
+import { incrementCount, decrementCount } from './../store/actions/count'
 
 import { connect } from 'react-redux'
 
-class Home extends Component {
+class Test extends Component {
   clickIncrease = () => {
     this.props.incrementCount()
   }
@@ -16,14 +15,16 @@ class Home extends Component {
   }
   render() {
     const { t, i18n } = this.props;
+    console.log(1232);
     const changeLanguage = lng => {
       i18n.changeLanguage(lng);
     };
+    console.log(this.props);
     return (
       <div className="Home">
         <div className="Home-header">
           <img src={logo} className="Home-logo" alt="logo" />
-          <h2>HOME {t('message.welcome')}</h2>
+          <h2>TEST {t('message.welcome')}</h2>
           <button onClick={() => changeLanguage('de')}>de</button>
           <button onClick={() => changeLanguage('en')}>en</button>
           <button onClick={() => changeLanguage('vi')}>vi</button>
@@ -67,4 +68,4 @@ function mapStateToProps (state) {
   return {count}
 }
 
-export default connect(mapStateToProps, {incrementCount, decrementCount})(withNamespaces('translations')(Home))
+export default connect(mapStateToProps, {incrementCount, decrementCount})(withNamespaces('translations')(Test))

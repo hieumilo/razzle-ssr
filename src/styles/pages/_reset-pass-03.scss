@@ -1,0 +1,10 @@
+.btn-submit-pass {
+    padding-bottom: 222px;
+    margin-top: 62px;
+.btn-submit-pass-rs {
+    @include btn-submit;
+    padding: 14px 0;
+    font-size: 14px;
+    @include hover-btn;
+}
+}

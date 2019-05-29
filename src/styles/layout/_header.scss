@@ -1,0 +1,114 @@
+body {
+  background: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background: #fff;
+  top: 0;
+}
+.container {
+  max-width: 1280px !important;
+  padding: 0;
+}
+.header-top {
+  padding: 8px 0 7px 0;
+  border-bottom: 1px solid #e1e1e1;
+  .list-language {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 90px;
+    .language-item {
+      .language-link {
+        font-size: 14px;
+        color: #808080;
+      }
+      &:nth-child(2) {
+        .language-link {
+          padding: 0 10px !important;
+          &::after {
+            content: "\f111";
+            margin-left: 10px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2px;
+            line-height: 0;
+            position: relative;
+            bottom: 3px;
+          }
+          &::before {
+            content: "\f111";
+            margin-right: 10px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 2px;
+            line-height: 0;
+            position: relative;
+            bottom: 3px;
+          }
+        }
+      }
+    }
+    .active a {
+      color: #222222 !important;
+    }
+  }
+}
+.menu-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 79px;
+  .logo a{
+    font-size: 50px;
+    color: red;
+  }
+  .bg-light {
+    background: transparent !important;
+    .navbar-nav {
+      .nav-item {
+        padding: 8px 0;
+        margin: 0 45px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #252525;
+        transition: 0.3s;
+        &:hover {
+          border-bottom: 2px solid #252525;
+          padding-bottom: 3px !important;
+        }
+      }
+    }
+    .navbar-toggler {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .login-info {
+    margin-top: 15px;
+    .list-item {
+      display: flex;
+      padding: 2px 15px;
+      background: #252525;
+      border-radius: 20px;
+      .item {
+        margin-left: 10px;
+        a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        &:nth-child(1) {
+          a {
+            border-right: 1px solid #fff;
+            padding-right: 10px;
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

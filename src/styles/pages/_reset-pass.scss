@@ -1,0 +1,12 @@
+.btn-reset-pass{
+    padding-bottom: 130px;
+    .btn-reset {
+        @include btn-submit;
+        background: #AAAAAA;
+        padding: 14px 0;
+        font-size: 18px;
+        line-height: inherit;
+        height: auto ;   
+        @include hover-btn;
+    }
+}

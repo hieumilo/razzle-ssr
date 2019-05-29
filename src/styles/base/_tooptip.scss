@@ -1,0 +1,26 @@
+@mixin tooptip-right{ 
+    &::before {
+        border-bottom: solid transparent 9px;
+        border-top: solid transparent 7px;
+        border-right: solid #CD302D 8px;
+        top: 40%;
+        z-index: 1;
+        content: " ";
+        height: 0;
+        left: -9px;
+        position: absolute;
+        width: 0;
+      }
+      &::after {
+        border-bottom: solid transparent 10px;
+        border-top: solid transparent 7px;
+        border-right: solid #fff 14px;
+        top: 40%;
+        z-index: 2;
+        content: " ";
+        height: 0;
+        left: -9px;
+        position: absolute;
+        width: 0;
+      }
+}

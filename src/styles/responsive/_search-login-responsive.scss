@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .search-login {
+        .tooptip-search-login {
+            left: 50px;
+            top: 45px;
+            z-index: 2;
+            &::before {
+                border-left: solid transparent 7px;
+                border-right: solid transparent 7px;
+                border-bottom: solid #fff 10px;
+                top: -14px;
+                z-index: 3;
+                content: " ";
+                height: 0;
+                left: 9px;
+                position: absolute;
+                width: 0;
+              }
+              &::after {
+                border-left: solid transparent 7px;
+                border-right: solid transparent 7px;
+                border-bottom: solid #CD302D 7px;
+                top: -15px;
+                content: " ";
+                height: 0;
+                left: 22px;
+                margin-left: -13px;
+                position: absolute;
+                width: 0;
+              }
+        }
+        p {
+            margin: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.code-test {
+    color: #787878;
+    font-size: 18px;
+    span a{
+        color: $color_tooptip;
+        font-weight: bold;
+    }
+}
+.input-test input {
+    padding-left: 15px !important;
+}
+.btn-reset-pass {
+    a {
+        font-size: 14px;
+        color: #787878;
+    }
+}
